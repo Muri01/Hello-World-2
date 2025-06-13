@@ -153,3 +153,21 @@ perguntas[1].alternativa[1]
 //   itemDaLista.textContent = linguagem;
 //   lista.appendChild(itemDaLista);
 // }
+
+
+
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa;
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
+}
+
+for (const item in aluno1){
+   console.log(item);
+}
+for (const item in aluno1){
+   let propriedade = item
+   console.log(aluno1.propriedade);
+}
