@@ -6,7 +6,7 @@ function inserirNome(){
 
 inserirNome();
 
-//Lista de linguagens escritas:
+//Reunião 7- Lista de linguagens escritas:
 const linguagens = ["JavaScript", "Python", "C++"]
 
 console.log(linguagens[0]) // “JavaScript”
@@ -21,7 +21,8 @@ lista.textContent = linguagens[1];
 lista.textContent = linguagens[2]; 
 
 
-// R8 - objetos
+
+// Reunião 8 - objetos
 let aluno1 = {
    nome: "Murilo",
    idade: 30,
@@ -29,16 +30,24 @@ let aluno1 = {
    MateriasFavoritas: ["Matematica", "Geografia"]
 }
 
-console.log(aluno1.nome);
-console.log(aluno1.MateriasFavoritas[0])
+ console.log(aluno1.nome);
+ console.log(aluno1.MateriasFavoritas[0])
 
 const objeto = document.querySelector("#alunos");
 objeto.textContent = aluno1.nome
 objeto.textContent = aluno1.idade
 
 
+
+
+//codigo da aula 2 da unidade Funções: criando uma missão sobre IA
 let perguntas = [
-   {
-      pergunta: "Pergunta1"
-   }
+ {
+   enunciado: "Pergunta 1",
+  alternativas: ["alternativa1","alternativa2","alternativa3"]
+ },
+ {
+  enunciado: "Pergunta 2",
+  alternativas: ["alternativa1","alternativa2","alternativa3"]
+ }
 ]
