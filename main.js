@@ -1,3 +1,4 @@
+// Reunião 6
 function inserirNome(){
    let nomeUsuario = prompt("Qual o seu nome");
    let elemento = document.querySelector("#nome-usuario");
@@ -7,7 +8,7 @@ function inserirNome(){
 inserirNome();
 
 //Reunião 7- Lista de linguagens escritas:
-const linguagens = ["JavaScript", "Python", "C++"]
+const linguagens = ["JavaScript", "Python", "C++", "Ruby"]
 
 console.log(linguagens[0]) // “JavaScript”
 console.log(linguagens[1]) // “Python”
@@ -20,10 +21,26 @@ const item = document.querySelector("#lista");  //seleciona elemento com id "lis
 // item.textContent = linguagens[1]; 
 // item.textContent = linguagens[2];
 
+//Solução 1: Criar vários elemento com id diferentes para 
+//atribuir cada item da lista um de cada vez
+const item1 = document.querySelector("#lista1"); 
+ item1.textContent = linguagens[0]; 
+
+ const item2 = document.querySelector("#lista2"); 
+ item2.textContent = linguagens[1]; 
+
+ const item3 = document.querySelector("#lista3"); 
+ item3.textContent = linguagens[2]; 
+
+ const item4 = document.querySelector("#lista4"); 
+ item4.textContent = linguagens[3]; 
+
+
+//Solução 2: Usar laço de repetição "for of"
 for (const linguagem of linguagens) {
   const itemDaLista = document.createElement("li");
   itemDaLista.textContent = linguagem;
-  item.appendChild(itemDaLista);
+  item.appendChild(itemDaLista); // "item" foi criada mais acima
 }
 
 
